@@ -267,13 +267,14 @@
     /* FOOTER */
     footer {
       border-top: 1px solid var(--border);
-      padding: 2rem 0;
+      padding: 3rem 0 2rem;
       text-align: center;
     }
 
     footer p {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       color: var(--muted);
+      line-height: 1.7;
     }
 
     footer a {
@@ -281,6 +282,39 @@
       text-decoration: none;
     }
     footer a:hover { text-decoration: underline; }
+
+    .footer-feedback {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer-feedback p {
+      font-size: 0.9rem;
+    }
+
+    .bmc-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #FFDD00;
+      color: #000000 !important;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      font-size: 0.85rem;
+      padding: 0.55rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none !important;
+      margin-top: 1rem;
+      transition: opacity 0.2s ease;
+    }
+
+    .bmc-btn:hover { opacity: 0.85; text-decoration: none !important; }
 
     /* Animations */
     @keyframes fadeUp {
@@ -326,12 +360,13 @@
             <span class="card-arrow">→</span>
           </a>
 
-          <div class="card card-coming-soon">
+          <a href="https://rbeadle21.github.io/scriptwriter/" class="card" target="_blank" rel="noopener">
             <div class="card-icon">🎭</div>
-            <div class="card-badge badge-soon">Coming Soon</div>
+            <div class="card-badge badge-live">Live</div>
             <h2>ScriptWriter</h2>
             <p>A script writing and actor preparation tool for theatre writers and performers, with multiple formatting styles and a dedicated actor zone.</p>
-          </div>
+            <span class="card-arrow">→</span>
+          </a>
 
         </div>
       </div>
@@ -340,4 +375,21 @@
 
   <footer>
     <div class="container">
-      <p>Get in touch: <a href="/cdn-cgi/l/email-protection#275444554e57535048554c545352434e48674f48534a464e4b09444809524c"><span class="__cf_email__"
+
+      <div class="footer-feedback">
+        <p>Have feedback, spotted a bug, or just want to say hello? I'd love to hear from you — whether it's a suggestion to improve one of the tools, a feature you'd like to see, or anything else. Feel free to reach out at any time.</p>
+        <p style="margin-top: 0.75rem;">📩 <a href="mailto:scriptworkstudio@hotmail.com">scriptworkstudio@hotmail.com</a></p>
+      </div>
+
+      <p>If you find these tools useful, you can support the project:</p>
+      <a href="https://buymeacoffee.com/scriptworkstudio" class="bmc-btn" target="_blank" rel="noopener">
+        ☕ Buy me a coffee
+      </a>
+
+      <p style="margin-top: 1.5rem; font-size: 0.75rem;">© Script Work Studio</p>
+
+    </div>
+  </footer>
+
+</body>
+</html>

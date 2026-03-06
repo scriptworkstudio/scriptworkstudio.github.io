@@ -264,6 +264,51 @@
       transform: translateX(0);
     }
 
+    .card-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .card-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .card-btn-primary {
+      background: rgba(74,143,212,0.18);
+      border: 1px solid rgba(74,143,212,0.4);
+      color: var(--accent2);
+    }
+
+    .card-btn-primary:hover {
+      background: rgba(74,143,212,0.3);
+      border-color: rgba(74,143,212,0.7);
+    }
+
+    .card-btn-secondary {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--muted);
+    }
+
+    .card-btn-secondary:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.25);
+      color: var(--text);
+    }
+
     /* FOOTER */
     footer {
       border-top: 1px solid var(--border);
@@ -328,6 +373,7 @@
     .section-label { animation: fadeUp 0.5s 0.3s ease both; }
     .card:nth-child(1) { animation: fadeUp 0.5s 0.35s ease both; }
     .card:nth-child(2) { animation: fadeUp 0.5s 0.45s ease both; }
+    .card:nth-child(3) { animation: fadeUp 0.5s 0.55s ease both; }
   </style>
 </head>
 <body>
@@ -352,7 +398,7 @@
         <div class="section-label">Projects</div>
         <div class="cards">
 
-          <a href="https://Rbeadle21.github.io/Yr6-sats-question-bank/" class="card" target="_blank" rel="noopener">
+          <a href="https://scriptworkstudio.github.io/Yr6-sats-question-bank/" class="card" target="_blank" rel="noopener">
             <div class="card-icon">📚</div>
             <div class="card-badge badge-live">Live</div>
             <h2>Year 6 SATs Question Bank</h2>
@@ -360,13 +406,24 @@
             <span class="card-arrow">→</span>
           </a>
 
-          <a href="https://rbeadle21.github.io/scriptwriter/" class="card" target="_blank" rel="noopener">
+          <a href="https://scriptworkstudio.github.io/scriptwriter/" class="card" target="_blank" rel="noopener">
             <div class="card-icon">🎭</div>
             <div class="card-badge badge-live">Live</div>
             <h2>ScriptWriter</h2>
             <p>A script writing and actor preparation tool for theatre writers and performers, with multiple formatting styles and a dedicated actor zone.</p>
             <span class="card-arrow">→</span>
           </a>
+
+          <div class="card">
+            <div class="card-icon">🗺</div>
+            <div class="card-badge badge-live">Live</div>
+            <h2>Realm Keeper</h2>
+            <p>A fantasy world-building tool for tabletop RPG dungeon masters. Build maps, place pins, write wiki entries for NPCs, factions and quests, and visualise everything as a connection graph.</p>
+            <div class="card-actions">
+              <a href="https://scriptworkstudio.github.io/realmkeeper/" class="card-btn card-btn-primary" target="_blank" rel="noopener">🌐 Open Lite (Browser)</a>
+              <a href="https://github.com/scriptworkstudio/realmkeeper/releases/latest/download/Realm.Keeper.Setup.1.0.0.exe" class="card-btn card-btn-secondary">⬇ Download Desktop</a>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -378,18 +435,14 @@
 
       <div class="footer-feedback">
         <p>Have feedback, spotted a bug, or just want to say hello? I'd love to hear from you — whether it's a suggestion to improve one of the tools, a feature you'd like to see, or anything else. Feel free to reach out at any time.</p>
-        <p style="margin-top: 0.75rem;">📩 <a href="mailto:scriptworkstudio@hotmail.com">scriptworkstudio@hotmail.com</a></p>
+        <p style="margin-top: 0.75rem;">📩 <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#99;&#114;&#105;&#112;&#116;&#119;&#111;&#114;&#107;&#115;&#116;&#117;&#100;&#105;&#111;&#64;&#104;&#111;&#116;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#115;&#99;&#114;&#105;&#112;&#116;&#119;&#111;&#114;&#107;&#115;&#116;&#117;&#100;&#105;&#111;&#64;&#104;&#111;&#116;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></p>
       </div>
 
       <p>If you find these tools useful, you can support the project:</p>
       <a href="https://buymeacoffee.com/scriptworkstudio" class="bmc-btn" target="_blank" rel="noopener">
         ☕ Buy me a coffee
       </a>
-
-      <p style="margin-top: 1.5rem; font-size: 0.75rem;">© Script Work Studio</p>
-
     </div>
   </footer>
-
 </body>
 </html>
